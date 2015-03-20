@@ -39,7 +39,7 @@
 			$data = json_decode( wp_remote_retrieve_body( $response ) );
 			
 			?>
-				<!-- Loaded in <?php echo esc_html( microtime( true ) - $start ); ?> ms -->
+				<!-- Loaded in <?php echo esc_html( microtime( true ) - $start ); ?> seconds -->
 				<ul>
 					<li>Total activities: <?php echo esc_html( $data->userMetrics[0]->totalActivities ); ?></li>
 					<li>Total distance: <?php echo esc_html( round( $data->userMetrics[0]->totalDistance / 1000 ) ); ?> km</li>
